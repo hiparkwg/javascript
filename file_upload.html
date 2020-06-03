@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.imgs_wrap{
+	min-height:200px;
+	border:1px solid #888;
+}
+
+</style>
+<script src='../js/file_upload.js'></script>
+</head>
+<body>
+	<h2>이미지 미리보기 | 멀티 업로드 TEST</h2>
+	<div class='input-wrap'>
+		<input type='file' id='btnAtt' multiple />
+	</div>
+	<div>
+		<div class='imgs_wrap' id='imgs_wrap'>
+		</div>
+	</div>
+	<input type='button' value='멀티파일 전송' id='submitAction'/>
+
+	
+	<script>
+		upload.start('btnAtt', 'submitAction', 'imgs_wrap', 'file_upload_action.jsp');
+	</script>
+</body>
+</html>
